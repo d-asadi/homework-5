@@ -1,0 +1,217 @@
+@font-face{
+    font-family: 'yekan';
+    src: url('../fonts/Yekan.ttf');
+}
+
+*{
+    font-family: "yekan", verdana;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    font: 15px/1.5 "yekan";
+    direction: rtl !important;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    .highlight{
+        color: #85584b;
+    }
+    .active{
+        color: #85584b !important;
+        font-weight:800;
+
+    }
+
+    /* Header */
+    header{
+        background-color: #35424a;
+        color: #fff;
+        padding: 10px 0px;
+        font-size: 16px;
+        border-bottom: 3px solid #85584b;
+
+    }
+    header::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    header li{
+        float: right;
+        padding: 10px;
+    }
+    header a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    header a:hover{
+       color: #ccc; 
+    }
+    header #branding{
+        float: right;
+    }
+    header branding h1{
+        margin: 0;
+
+    }
+    header nav{
+        float: left;
+        margin-top: 20px;
+    }
+    /* NEWSLETTER */
+    #newsletter{
+        background-color: #35424a;
+        color: #fff;
+    }
+    #newsletter::after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+   
+    #newsletter h1{
+        float: right;
+        margin: 25px;
+        font-size: 20px;
+        color: #fff;
+    }
+    #newsletter form{
+        float: left;
+        margin-top: 20px;
+    }
+    #newsletter input[type="email"]{
+        padding: 5px;
+        width: 250px;
+    }
+    #newsletter .btn{
+        height: 37px;
+        width: 100px;
+        margin-bottom: 20px;
+        background-color: #85584b;
+        border: 0;
+        padding: 0px 20px;
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    /* SERVICES */
+    #Services {
+        width:100%;
+        background-color: rgb(233, 229, 229);
+        margin: 0;
+        min-height: 50vh;
+        font-size: 16px;
+        float: right;
+        content: '';
+        display: block;
+        clear: both;
+
+    }
+
+    #Services h2{
+        margin-top: 10px;
+        font-size: 18px;
+        text-align: right;
+    }
+        .box {
+            float: right;
+            width: 60%;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 10px;
+
+    }
+        .box1{
+            background-color: #d3d2d29f;
+            margin-bottom: 10px;
+            padding: 10px;
+            border:1px solid #c8cbcc;
+
+    }
+
+        /* IDEA */
+        #Idea{
+            float:left;
+            width: 20%;
+            margin: 1px 150px 20px;
+            background-color: rgb(49, 48, 48);
+            padding: 5px;
+            color: #fff;
+    }
+        #Idea .btn{
+            height: 37px;
+            background-color: #85584b;
+            border: 0;
+            padding: 0px 20px;
+            color: #fff;
+            /* border-radius: 3px; */
+            cursor: pointer;
+            margin: 10px;
+    }
+
+        label[for="نام"], label[for="ایمیل"], label[for="نظر"], button[name=ارسال] {
+            display: block;
+            cursor: pointer;
+    }
+        #Idea form input{
+            display: block;
+            width: 85%;
+            padding: 5px;;
+    }
+        textarea{
+            width: 85%;
+            height: 50px;
+    }
+
+        /* FOOTER */
+        footer{
+            background-color: #85584b;
+            padding: 20px;
+            clear: both;
+            color: #fff;
+            text-align:center;
+    }
+        footer p{
+            letter-spacing: 1px;
+            font-size: 18px;
+    }
+    @media (max-width: 768px){
+        #branding, nav, nav li, #newsletter h1, newsletter form, #services .box{
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        #newsletter {
+            padding-bottom: 10px;
+        }
+        #newsletter h1{
+            margin-top: 0;
+        }
+        #showcase h1{
+            padding-top: 100px;
+
+        }
+        .btn, form input{
+            width: 100% !important;
+            box-sizing: border-box;
+            display: block;
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+    }

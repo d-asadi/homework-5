@@ -1,0 +1,196 @@
+@font-face{
+    font-family: 'yekan';
+    src: url('../fonts/Yekan.ttf');
+}
+
+*{
+    font-family: "yekan", verdana;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    font: 15px/1.5 "yekan";
+    direction: rtl !important;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    .highlight{
+        color: #85584b;
+    }
+    .active{
+        color: #85584b !important;
+        font-weight:800;
+
+    }
+
+    /* Header */
+    header{
+        background-color: #35424a;
+        color: #fff;
+        padding: 10px 0px;
+        font-size: 16px;
+        border-bottom: 3px solid #85584b;
+
+    }
+    header::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    header li{
+        float: right;
+        padding: 10px;
+    }
+    header a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    header a:hover{
+       color: #ccc; 
+    }
+    header #branding{
+        float: right;
+    }
+    header branding h1{
+        margin: 0;
+
+    }
+    header nav{
+        float: left;
+        margin-top: 20px;
+    }
+    /* NEWSLETTER */
+    #newsletter{
+        background-color: #35424a;
+        color: #fff;
+    }
+    #newsletter::after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+   
+    #newsletter h1{
+        float: right;
+        margin: 20px;
+        font-size: 20px;
+        color: #fff;
+    }
+    #newsletter form{
+        float: left;
+        margin-top: 20px;
+    }
+    #newsletter input[type="email"]{
+        padding: 5px;
+        width: 250px;
+        /* height: 25px;
+        border-radius: 3px;
+        border: 0; */
+    }
+    #newsletter .btn{
+        height: 37px;
+        width: 100px;
+        margin-bottom: 20px;
+        background-color: #85584b;
+        border: 0;
+        padding: 0px 20px;
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    /* ABOUT US */
+    #Aboutus{
+        background-color: #fff;
+        color: #000;
+        min-height: 50vh;
+        text-align:justify;
+        font-size: 16px;
+        }
+    #Aboutus h2{
+        margin:0;
+        font-size: 18px;
+        text-align: right;
+        }
+        .box{
+            float: right;
+            text-align:justify;
+            width:60%;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 0;
+
+        }
+        .container h2{
+            font-size: 17px;
+        }
+        .container>.box-2{
+            background-color: #444;
+            padding: 10px;
+            color: white;
+            float: right;
+        }
+
+        .box-4 h2{
+            font-size: 17px;
+        }
+        .box-4{
+            background-color: #444;
+            float: left;
+            width: 30%;
+            font-size: 14px;
+            padding: 10px;
+            color: white;
+            text-align:justify;
+            margin-top: 30px;
+        }
+
+    footer{
+        background-color: #85584b;
+        padding: 20px;
+        clear: both;
+        color: #fff;
+        text-align:center;
+
+    }
+    footer p{
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    @media (max-width: 768px){
+        #branding, nav, nav li, #newsletter h1, newsletter form, #services .box{
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        #newsletter {
+            padding-bottom: 10px;
+        }
+        #newsletter h1{
+            margin-top: 0;
+        }
+        #showcase h1{
+            padding-top: 100px;
+
+        }
+        .btn, form input{
+            width: 100% !important;
+            box-sizing: border-box;
+            display: block;
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+    }
